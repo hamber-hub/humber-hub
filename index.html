@@ -1,101 +1,124 @@
 <!DOCTYPE html>
 <html lang="ar" dir="auto">
+
 <head>
-    <!-- Google Analytics (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G68ZSBT2J7"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      // Do not call 'gtag(config)' here to delay initialization until consent is granted.
-    </script>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js">
-</script>
-<!-- Google Tag Manager -->
-<script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-T8WS8VP7');
+  <!-- Google Analytics (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G68ZSBT2J7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    // Do not call 'gtag(config)' here to delay initialization until consent is granted.
+  </script>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js",
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-T8WS8VP7");
   </script>
   <!-- End Google Tag Manager -->
-  
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamber</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="css/flipdown/flipdown.css">
-    <script src="https://kit.fontawesome.com/00400e6668.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" src="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" >
-    <script type="text/javascript" src="js/flipdown/flipdown.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-</head>
-<body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8WS8VP7"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
-    <div class="container">
 
-        <img src="images/hamper.logo.png" alt="Hamber Logo" class="logo">
-        <p1>وجهتك الجديدة للتجارة الألكترونية بالذكاء الأصطناعي في الشرق الأوسط</p1>
-        <p2> COMING SOON</p2>
-        <div id="flipdown" class="flipdown"></div>
-        
-    </div>
-    <div class="newsletter">
-        <p3>هل تريد ارسال اشعار فور الانطلاق؟</p3>
-        <input type="email" placeholder="بريدك الالكتروني">
-        <button>اشترك</button>
-    </div>
-    <div class="social-icons">
-        <p6> تابعنا على</p6>
-        <a href="https://www.facebook.com" target="_blank"><span><i class="fa-brands fa-facebook"></i></span></a>
-        <a href="https://twitter.com" target="_blank"><span> <i class="fa-brands fa-x-twitter"></i></span></a>
-        <a href="https://www.instagram.com" target="_blank"><span><i class="fab fa-instagram"></i></span></a>
-        <a href="https://www.linkedin.com" target="_blank"><span><i class="fab fa-linkedin"></i></span></a>
-    </div>
-    <div>
-        <p4>جميع الحقوق محفوظة  HAMPER 2024 ©</p4>
-    </div>
-      <!-- Cookie Consent Initialization -->
-      <script>
-        window.addEventListener('load', function() {
-          window.cookieconsent.initialise({
-            palette: {
-              popup: { background: "#000" },
-              button: { background: "#f1d600" }
-            },
-            theme: "classic",
-            content: {
-              message: "We use cookies to ensure you get the best experience on our website.",
-              dismiss: "Got it!",
-              link: "Learn more",
-              href: "/cookie-policy"  // Replace with your cookie policy page
-            },
-            type: "opt-in", // Require explicit consent for tracking
-            onInitialise: function (status) {
-              var didConsent = this.hasConsented();
-              if (didConsent) {
-                console.log('Consent granted. Initializing Google Analytics.');
-                gtag('config', 'G-G68ZSBT2J7', { 'anonymize_ip': true });
-              }
-            },
-            onStatusChange: function(status) {
-              var didConsent = this.hasConsented();
-              if (didConsent) {
-                console.log('Consent granted. Initializing Google Analytics.');
-                gtag('config', 'G-G68ZSBT2J7', { 'anonymize_ip': true });
-              }
-            },
-            onRevokeChoice: function() {
-              console.log('Consent revoked. Analytics disabled.');
-            }
-          });
-        });
-      </script>
-      
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Hamber: Your new AI-powered e-commerce destination in the Middle East. Shop smart, shop with Hamber." />
+  <meta name="keywords" content="e-commerce, AI, Hamber, Middle East, online shopping" />
+  <meta property="og:title" content="Hamber - Your New E-commerce Destination" />
+  <meta property="og:description" content="Discover the power of AI in e-commerce with Hamber. Coming soon." />
+  <meta property="og:image" content="images/hamper.logo.png" />
+  <meta property="og:url" content="https://hamber-hub.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hamber - Your New E-commerce Destination" />
+  <meta name="twitter:description" content="AI-powered e-commerce coming soon to the Middle East." />
+  <meta name="twitter:image" content="images/hamper.logo.png" />
+  <title>Hamber - Coming Soon</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="css/flipdown/flipdown.css" />
+  <script src="https://kit.fontawesome.com/00400e6668.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" src="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" />
+  <script type="text/javascript" src="js/flipdown/flipdown.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <link rel="icon" href="images/hamper.logo.png" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8WS8VP7" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="container">
+    <img src="images/hamper.logo.png" alt="Hamber Logo" class="logo" />
+    <p1>وجهتك الجديدة للتجارة الألكترونية بالذكاء الأصطناعي في الشرق الأوسط</p1>
+    <p2> COMING SOON</p2>
+    <div id="flipdown" class="flipdown"></div>
+  </div>
+  <div class="newsletter">
+    <p3>هل تريد ارسال اشعار فور الانطلاق؟</p3>
+    <input type="email" placeholder="بريدك الالكتروني" />
+    <button>اشترك</button>
+  </div>
+  <div class="social-icons">
+    <p6> تابعنا على</p6>
+    <a href="https://www.facebook.com" target="_blank"><span><i class="fa-brands fa-facebook"></i></span></a>
+    <a href="https://twitter.com" target="_blank"><span> <i class="fa-brands fa-x-twitter"></i></span></a>
+    <a href="https://www.instagram.com" target="_blank"><span><i class="fab fa-instagram"></i></span></a>
+    <a href="https://www.linkedin.com" target="_blank"><span><i class="fab fa-linkedin"></i></span></a>
+  </div>
+  <div>
+    <p4>جميع الحقوق محفوظة HAMPER 2024 ©</p4>
+  </div>
+  <!-- Cookie Consent Initialization -->
+  <script>
+    window.addEventListener("load", function () {
+      window.cookieconsent.initialise({
+        palette: {
+          popup: { background: "#000" },
+          button: { background: "#f1d600" },
+        },
+        theme: "classic",
+        content: {
+          message:
+            "We use cookies to ensure you get the best experience on our website.",
+          dismiss: "Got it!",
+          link: "Learn more",
+          href: "/cookie-policy", // Replace with your cookie policy page
+        },
+        type: "opt-in", // Require explicit consent for tracking
+        onInitialise: function (status) {
+          var didConsent = this.hasConsented();
+          if (didConsent) {
+            console.log("Consent granted. Initializing Google Analytics.");
+            gtag("config", "G-G68ZSBT2J7", { anonymize_ip: true });
+          }
+        },
+        onStatusChange: function (status) {
+          var didConsent = this.hasConsented();
+          if (didConsent) {
+            console.log("Consent granted. Initializing Google Analytics.");
+            gtag("config", "G-G68ZSBT2J7", { anonymize_ip: true });
+          }
+        },
+        onRevokeChoice: function () {
+          console.log("Consent revoked. Analytics disabled.");
+        },
+      });
+    });
+  </script>
 </body>
+
 </html>
