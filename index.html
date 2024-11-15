@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="ar" dir="auto">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-G68ZSBT2J7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-</script>
+    <!-- Google Analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G68ZSBT2J7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      // Do not call 'gtag(config)' here to delay initialization until consent is granted.
+    </script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js">
 </script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-T8WS8VP7');</script>
-    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-T8WS8VP7');
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamber</title>
@@ -56,8 +58,9 @@
     <div>
         <p4>جميع الحقوق محفوظة  HAMPER 2024 ©</p4>
     </div>
-    <script>
-        window.addEventListener('load', function(){
+      <!-- Cookie Consent Initialization -->
+      <script>
+        window.addEventListener('load', function() {
           window.cookieconsent.initialise({
             palette: {
               popup: { background: "#000" },
@@ -65,29 +68,28 @@
             },
             theme: "classic",
             content: {
-              message: "This website uses cookies to ensure you get the best experience on our website.",
+              message: "We use cookies to ensure you get the best experience on our website.",
               dismiss: "Got it!",
               link: "Learn more",
-              href: "/cookie-policy"
+              href: "/cookie-policy"  // Replace with your cookie policy page
             },
-            type: "opt-in", // Use opt-in for explicit consent
+            type: "opt-in", // Require explicit consent for tracking
             onInitialise: function (status) {
-              var type = this.options.type;
               var didConsent = this.hasConsented();
               if (didConsent) {
-                // Load Google Analytics
+                console.log('Consent granted. Initializing Google Analytics.');
                 gtag('config', 'G-G68ZSBT2J7', { 'anonymize_ip': true });
               }
             },
             onStatusChange: function(status) {
               var didConsent = this.hasConsented();
               if (didConsent) {
-                // Load Google Analytics
+                console.log('Consent granted. Initializing Google Analytics.');
                 gtag('config', 'G-G68ZSBT2J7', { 'anonymize_ip': true });
               }
             },
             onRevokeChoice: function() {
-              // Optional: Add logic to disable analytics if consent is revoked
+              console.log('Consent revoked. Analytics disabled.');
             }
           });
         });
