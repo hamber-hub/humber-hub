@@ -10,6 +10,8 @@
 
   gtag('config', 'G-G68ZSBT2J7', { 'debug_mode': true });
 </script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js">
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,6 +47,42 @@
     <div>
         <p4>جميع الحقوق محفوظة  HAMPER 2024 ©</p4>
     </div>
-
+    <script>
+        window.addEventListener('load', function(){
+          window.cookieconsent.initialise({
+            palette: {
+              popup: { background: "#000" },
+              button: { background: "#f1d600" }
+            },
+            theme: "classic",
+            content: {
+              message: "This website uses cookies to ensure you get the best experience on our website.",
+              dismiss: "Got it!",
+              link: "Learn more",
+              href: "/cookie-policy"
+            },
+            type: "opt-in", // Use opt-in for explicit consent
+            onInitialise: function (status) {
+              var type = this.options.type;
+              var didConsent = this.hasConsented();
+              if (didConsent) {
+                // Load Google Analytics
+                gtag('config', 'G-G68ZSBT2J7', { 'anonymize_ip': true });
+              }
+            },
+            onStatusChange: function(status) {
+              var didConsent = this.hasConsented();
+              if (didConsent) {
+                // Load Google Analytics
+                gtag('config', 'G-G68ZSBT2J7', { 'anonymize_ip': true });
+              }
+            },
+            onRevokeChoice: function() {
+              // Optional: Add logic to disable analytics if consent is revoked
+            }
+          });
+        });
+      </script>
+      
 </body>
 </html>
