@@ -2,7 +2,38 @@
 <html lang="ar" dir="auto">
 
 <head>
+  <script>
+    // Initialize dataLayer and gtag function
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+  
+    // Default consent settings for specific regions (Modify regions as needed)
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
+      'functionality_storage': 'denied',
+      'personalization_storage': 'denied',
+      'security_storage': 'denied',
+      'regions': ['EG', 'SA', 'AE', 'KW', 'QA', 'OM', 'JO', 'LB', 'SY', 'IQ', 'BH'] // Middle East and Egypt region codes
+    });
+  
+    // Default consent for all other regions
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
+      'functionality_storage': 'denied',
+      'personalization_storage': 'denied',
+      'security_storage': 'denied'
+    });
+  </script>
   <script src="https://cmp.osano.com/169xYYUUJhAyJ6TUa/065aa6d2-0f5b-41d9-a02f-46a39f2de99d/osano.js"></script>
+
   <!-- Google Analytics (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RHDB5CDKRB"></script>
   <script>
