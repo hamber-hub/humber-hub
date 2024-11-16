@@ -14,23 +14,6 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        "gtm.start": new Date().getTime(),
-        event: "gtm.js",
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-T8WS8VP7");
-  </script>
-  <!-- End Google Tag Manager -->
 
   <meta charset="UTF-8" />
   <!-- SEO Meta Tags -->
@@ -63,15 +46,11 @@
   <link rel="icon" href="images/hamber.png" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" as="style">
-  <link rel="preload" href="images/Component-14.webp" as="image">
-  
+  <link rel="preload" href="images/Component14.webp" as="image">
+  <script src="https://cmp.osano.com/169xYYUUJhAyJ6TUa/065aa6d2-0f5b-41d9-a02f-46a39f2de99d/osano.js"></script>
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8WS8VP7" height="0" width="0"
-      style="display: none; visibility: hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
   <div class="container">
     <img src="images/hamber.png" alt="Hamber Logo" class="logo"loading="lazy" />
@@ -94,43 +73,6 @@
   <div>
     <p4>جميع الحقوق محفوظة HAMPER 2024 ©</p4>
   </div>
-  <!-- Cookie Consent Initialization -->
-  <script>
-    window.addEventListener("load", function () {
-      window.cookieconsent.initialise({
-        palette: {
-          popup: { background: "#000" },
-          button: { background: "#f1d600" },
-        },
-        theme: "classic",
-        content: {
-          message:
-            "We use cookies to ensure you get the best experience on our website.",
-          dismiss: "Got it!",
-          link: "Learn more",
-          href: "/cookie-policy", // Replace with your cookie policy page
-        },
-        type: "opt-in", // Require explicit consent for tracking
-        onInitialise: function (status) {
-          var didConsent = this.hasConsented();
-          if (didConsent) {
-            console.log("Consent granted. Initializing Google Analytics.");
-            gtag("config", "G-G68ZSBT2J7", { anonymize_ip: true });
-          }
-        },
-        onStatusChange: function (status) {
-          var didConsent = this.hasConsented();
-          if (didConsent) {
-            console.log("Consent granted. Initializing Google Analytics.");
-            gtag("config", "G-G68ZSBT2J7", { anonymize_ip: true });
-          }
-        },
-        onRevokeChoice: function () {
-          console.log("Consent revoked. Analytics disabled.");
-        },
-      });
-    });
-  </script>
 </body>
 
 </html>
